@@ -1,7 +1,7 @@
 {
-  "domain": "tomorrowio",
+  "domain": "tomorrowio-custom",
   "name": "Tomorrow.io",
-  "codeowners": ["@raman325", "@lymanepp"],
+  "codeowners": ["@raman325", "@lymanepp", "@appelboomhd"],
   "config_flow": true,
   "documentation": "https://www.home-assistant.io/integrations/tomorrowio",
   "integration_type": "service",
