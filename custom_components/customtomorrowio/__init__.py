@@ -105,10 +105,11 @@ def async_set_update_interval(
     # calculate interval to not exceed allowed numbers of requests. Divide 90% of
     # max_requests by the number of API calls because we want a buffer in the
     # number of API calls left at the end of the day.
+    max_requests_per_day = 500
     entries = async_get_entries_by_api_key(hass, api.api_key, exclude_entry)
     minutes = ceil(
         (24 * 60 * len(entries) * api.num_api_requests)
-        / (api.max_requests_per_day * 0.9)
+        / (max_requests_per_day * 0.9)
     )
     LOGGER.debug(
         (
@@ -119,7 +120,7 @@ def async_set_update_interval(
         ),
         len(entries),
         api.num_api_requests,
-        api.max_requests_per_day,
+        max_requests_per_day,
         minutes,
     )
     return timedelta(minutes=minutes)
