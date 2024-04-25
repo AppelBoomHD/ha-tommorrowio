@@ -28,8 +28,8 @@ FORECAST_TYPES = [DAILY, HOURLY, NOWCAST]
 
 DEFAULT_TIMESTEP = 60
 DEFAULT_FORECAST_TYPE = DAILY
-DOMAIN = "tomorrowio-custom"
-INTEGRATION_NAME = "Tomorrow.io"
+DOMAIN = "customtomorrowio"
+INTEGRATION_NAME = "Tomorrow.io Custom"
 DEFAULT_NAME = INTEGRATION_NAME
 ATTRIBUTION = "Powered by Tomorrow.io"
 
