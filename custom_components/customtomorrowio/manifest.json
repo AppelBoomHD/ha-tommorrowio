@@ -1,11 +1,11 @@
 {
   "domain": "customtomorrowio",
   "name": "Tomorrow.io Custom",
-  "codeowners": ["@raman325", "@lymanepp", "@appelboomhd"],
+  "codeowners": ["@appelboomhd"],
   "config_flow": true,
   "documentation": "https://www.home-assistant.io/integrations/tomorrowio",
+  "issue_tracker": "https://github.com/AppelBoomHD/ha-tommorrowio/issues",
   "integration_type": "service",
   "iot_class": "cloud_polling",
-  "loggers": ["pytomorrowio"],
-  "requirements": ["pytomorrowio==0.3.6"]
+  "version": "1.0.0"
 }
